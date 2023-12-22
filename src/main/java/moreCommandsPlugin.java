@@ -983,7 +983,7 @@ public class moreCommandsPlugin extends mindustry.mod.Plugin {
           + " [white]wants to change the map, [green]" + RTVsize + "[white]/[green]" + req
           + " []votes. [lightgray](selected map: [white]" + PVars.selectedMap.name() + "[lightgray])");
 
-      if (!PVars.rtvSession.isScheduled()) Timer.schedule(PVars.rtvSession, 60);
+      if (!PVars.rtvSession.isScheduled()) Timer.schedule(PVars.rtvSession, 1);
       if (RTVsize < req) return;
 
       PVars.rtvSession.cancel();
